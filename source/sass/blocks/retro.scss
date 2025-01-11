@@ -1,0 +1,114 @@
+.retro {
+  padding: 19.7rem 0 7.1rem;
+  font-family: $myriad;
+
+  &__box {
+    position: relative;
+    overflow: hidden;
+    background-color: $darkGreen;
+    border-radius: 19px;
+    padding: 9.2rem 5.7rem 8.7rem 9.9rem;
+  }
+
+  &__texture {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    user-select: none;
+    pointer-events: none;
+    height: 34rem;
+    width: 100%;
+    background-image: url('../img/texture.png');
+    background-repeat: repeat;
+    background-position: 0px 57.7rem;
+    border-top-left-radius: 19px;
+    border-top-right-radius: 19px;
+    background-size: 58.2rem;
+    z-index: 1;
+  }
+
+  &__decor {
+    position: absolute;
+    left: 0.5rem;
+    bottom: 0;
+    z-index: 1;
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+    gap: 5.8rem;
+    z-index: 3;
+  }
+
+  &__left {
+    width: 28.5rem;
+  }
+
+  &__title {
+    margin: -1rem 0 5rem;
+  }
+
+  &__text {
+    font-size: 2.2rem;
+    line-height: 1.1;
+
+    p {
+      margin: 0;
+    }
+
+    p:not(:last-child) {
+      margin: 0 0 2.7rem
+    }
+  }
+
+  &__table {
+    background-color: $red;
+    border-radius: 19px;
+    flex-grow: 1;
+    padding: 0 3.5rem 1.7rem 3rem;
+  }
+
+  &__row {
+    display: flex;
+    align-items: flex-start;
+    gap: 3.9rem;
+    font-size: 2.2rem;
+    padding: 2.7rem 0 2rem;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $white;
+    }
+  }
+
+  &__time {
+    font-family: $mossport;
+    text-transform: uppercase;
+    font-size: 4rem;
+    line-height: 1.01;
+  }
+
+  &__table-cell {
+    padding-top: 1.7rem;
+
+    img {
+      border-radius: 19px;
+    }
+  }
+
+  &__table-cell-text {
+    &:not(:last-child) {
+      margin: 0 0 2rem;
+    }
+  }
+
+  &__button {
+    border-radius: 17px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    &:hover {
+      background-color: $darkGreen !important;
+    }
+  }
+}

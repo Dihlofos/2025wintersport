@@ -1,0 +1,16 @@
+.logos {
+  display: flex;
+  gap: 1rem;
+  width: 36rem;
+  justify-content: space-between;
+
+  &__logo {
+    text-decoration: none;
+    color: $white;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: $red;
+    }
+  }
+}

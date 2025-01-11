@@ -1,0 +1,187 @@
+.main {
+  width: 100%;
+  overflow: visible;
+  padding: 6.7rem 0 18.8rem;
+
+  .container {
+    position: relative;
+  }
+
+  &__title {
+    margin: 0 0 6.5rem;
+  }
+
+  &__slider {
+    position: relative;
+    overflow: visible;
+    margin: 0 0 12.1rem;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: stretch;
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 12.6rem;
+    z-index: 20;
+    cursor: pointer;
+
+    .disabled & {
+      display: none;
+    }
+
+    &--prev {
+      left: -8.4rem;
+    }
+
+    &--next {
+      right: -8.2rem;
+    }
+
+    @media (max-width: $tablet) {
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+  }
+
+  &__slide {
+    width: auto;
+    background-color: $red;
+    min-height: 100%;
+    height: auto;
+    border-radius: 19px;
+    padding: 3.5rem 3.1rem 4.1rem 3rem;
+
+    img {
+      display: block;
+      border-radius: 19px;
+      margin: 0 0 3rem;
+    }
+
+    p {
+      font-size: 2.2rem;
+      line-height: 1.1;
+      font-family: $myriad;
+      margin: 0;
+    }
+
+    p:not(:last-child) {
+      margin: 0 0 3rem;
+    }
+
+    @media (max-width: $tablet) {
+      img {
+        max-width: 21.5rem;
+      }
+    }
+
+    @media(max-width: $mobile) {
+      width: 26rem;
+
+      img {
+        max-width: 26rem;
+      }
+    }
+  }
+
+  &__slide-title {
+    color: $white;
+    font-family: $mossport;
+    text-transform: uppercase;
+    font-size: 4rem;
+    line-height: 1.01;
+    margin: 0 0 2.5rem;
+
+    &--white {
+      color: $white;
+    }
+
+    @media (max-width: $tablet) {
+      font-size: 2.4rem;
+    }
+  }
+
+  &__decor {
+    position: absolute;
+    top: -31rem;
+    right: -54rem;
+  }
+
+  &__subtitle {
+    color: $grey;
+    font-size: 2.2rem;
+    line-height: 1.1;
+    font-family: $myriad;
+    margin: 0 0 4rem;
+  }
+
+  &__active-title {
+    display: flex;
+    justify-content: space-between;
+    background-color: $green;
+    font-family: $mossport;
+    text-transform: uppercase;
+    font-size: 5rem;
+    line-height: 1.01;
+    color: $white;
+    border-radius: 19px;
+    padding: 1.4rem 3rem 1rem;
+    margin: 0 0 4.8rem;
+  }
+
+  &__box-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4rem;
+    margin: 0 0 13.2rem;
+  }
+
+  &__box {
+    position: relative;
+    background-color: $darkRed;
+    color: $white;
+    padding: 3.5rem 3rem;
+    border-radius: 19px;
+    height: 26rem;
+
+    &--green {
+      background-color: $darkGreen;
+    }
+
+    &--half {
+      width: calc(50% - 1.9rem);
+      height: 21.5rem;
+    }
+
+    &--third {
+      width: calc(33.33333% - 2.5rem);
+    }
+  }
+
+  &__box-title {
+    margin: 0 0 3rem;
+  }
+
+  &__box-content {
+    font-family: $mossport;
+    text-transform: uppercase;
+    font-size: 4rem;
+    line-height: 1.01;
+  }
+
+  &__box-decor {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  &__box-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.7rem;
+  }
+
+
+}

@@ -1,0 +1,50 @@
+.downhill {
+  padding: 7rem 0 10rem;
+
+  &__title {
+    margin: 0 0 5rem;
+  }
+
+  &__box {
+    position: relative;
+    border-radius: 19px;
+    background-color: $darkGreen;
+    overflow: hidden;
+  }
+
+  &__texture-vertical {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 26rem;
+    height: 100%;
+    background-image: url(../img/texture-vertical.png);
+    background-size: 41rem;
+    background-position: -14.5rem 0;
+    border-bottom-left-radius: 19px;
+    transform: rotate(180deg);
+    z-index: 1;
+  }
+
+  &__decor {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+  }
+
+  &__content {
+    padding: 5.8rem 0 8rem 9.8rem;
+    font-size: 2.2rem;
+    line-height: 110%;
+    font-family: $myriad;
+    max-width: 51.2rem;
+
+    p {
+      margin: 0;
+      &:not(:last-child) {
+        margin: 0 0 3rem;
+      }
+    }
+  }
+}

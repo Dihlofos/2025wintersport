@@ -1,0 +1,8 @@
+.marquee {
+  overflow: hidden;
+  display: flex;
+
+  img {
+    max-width: unset;
+  }
+}

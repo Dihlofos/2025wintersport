@@ -1,0 +1,60 @@
+.race {
+  padding: 7rem 0 10rem;
+
+  &__box {
+    position: relative;
+    border-radius: 19px;
+    background-color: $green;
+    overflow: hidden;
+  }
+
+  &__texture-vertical {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 32rem;
+    height: 100%;
+    background-image: url(../img/texture-vertical.png);
+    background-size: 49rem;
+    background-position: -17rem 0;
+    border-bottom-left-radius: 19px;
+    z-index: 1;
+  }
+
+  &__title {
+    margin: 0 0 5rem
+  }
+
+  &__box-content {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    gap: 4rem;
+  }
+
+  &__box-left {
+    padding-left: 9.8rem;
+    padding-top: 4.9rem;
+    flex-shrink: 0;
+    align-self: flex-end;
+  }
+
+  &__box-right {
+    padding-top: 5.8rem;
+    padding-right: 5rem;
+    font-size: 2.2rem;
+    line-height: 110%;
+    font-family: $myriad;
+
+    p {
+      margin: 0 0 3rem;
+    }
+  }
+
+  &__button {
+    border-radius: 17px;
+    margin-top: 0.5rem;
+    padding: 1.4rem 1.7rem;
+  }
+
+}
