@@ -1,7 +1,12 @@
 .faq {
   position: relative;
-  padding: 14.5rem 0 11rem;
+  padding: 14.5rem 0 26rem;
   z-index: 2;
+  overflow: hidden;
+
+  .container {
+    position: relative;
+  }
 
   @media (max-width: $tablet) {
     padding: 4.4rem 0 3rem;
@@ -9,6 +14,12 @@
 
   @media (max-width: $mobile) {
     padding: 9rem 0 6.5rem;
+  }
+
+  &__decor {
+    position: absolute;
+    right: -43.3rem;
+    bottom: -37.7rem;
   }
 
   &__box {

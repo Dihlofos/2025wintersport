@@ -1,260 +1,156 @@
 .footer {
+  padding: 8.2rem 0 40.1rem;
+  font-family: $myriad;
 
   .container {
     position: relative;
-    padding: 7.5rem 0 9.6rem;
+  }
 
-    @media (max-width: $tablet) {
-      padding: 4rem 2.4rem 9.6rem;
-    }
+  .logos {
+    padding: 2rem 2.5rem 2rem 2.2rem;
+  }
 
-    @media (max-width: $mobile) {
-      padding: 0 1.6rem 9.6rem;
+  &__logos {
+    display: flex;
+    gap: 4.1rem;
+
+    .header__logo {
+      background-color: $darkRed;
     }
   }
 
   &__title {
-    margin: 0 0 7rem;
-
-    @media (max-width: $tablet) {
-      margin: 0 0 3.5rem;
-    }
-
-    @media (max-width: $mobile) {
-      margin: 3.5rem 0 4.5rem;
-    }
+    margin: 0;
   }
 
-
-  &__decor {
-    position: absolute;
-    top: -0.1rem;
-    right: -6.4rem;
-    width: 50.7rem;
-    height: 43.5rem;
-
-    @media (max-width: $tablet) {
-      width: 29.6rem;
-      height: 25.4rem;
-      right: 2.6rem;
-    }
-
-    @media (max-width: $mobile) {
-      position: relative;
-      width: 42.5rem;
-      height: auto;
-      margin: 0 auto;
-      left: -5rem;
-    }
-  }
-
-
-  &__logos {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  &__row {
     display: flex;
-    align-items: center;
-    gap: 4rem;
-    justify-content: center;
-    z-index: 5;
-    padding: 4.5rem 0 0 2.5rem;
+    align-items: flex-start;
+    justify-content: space-between;
 
-    @media (max-width: $tablet) {
-      gap: 2rem;
-      padding: 2.5rem 0 0 2.5rem;
+    &--title {
+      margin: 0 0 8rem;
+
+      .footer__right {
+        margin-top: 1.5rem;
+      }
     }
 
-    @media (max-width: $mobile) {
-      gap: 4rem;
-      padding: 4rem 0 0 1.5rem;
+    &--bottom {
+      align-items: flex-end;
+      margin-top: -3.2rem;
     }
-
-
   }
 
-  &__logo {
-    @media (max-width: $laptop) {
-      width: 15rem;
-    }
+  &__undeground {
+    margin-bottom: -1rem;
+  }
 
-    @media (max-width: $tablet) {
-      width: 9rem;
-    }
+  &__winter-logo {
+    padding: 1.8rem 3.8rem;
+    border-radius: 19px;
+    background-color: $darkRed;
+  }
 
-    @media (max-width: $mobile) {
-      width: 12rem;
-      height: auto;
-    }
+  &__texture {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    user-select: none;
+    pointer-events: none;
+    height: 39rem;
+    width: 100%;
+    background-image: url('../img/texture.png');
+    background-repeat: repeat;
+    background-position: 1rem 95.2rem;
+    border-top-left-radius: 19px;
+    border-top-right-radius: 19px;
+    background-size: 94.2rem;
+    z-index: 1;
+  }
+
+  &__right {
+    width: 56rem;
   }
 
   &__contacts {
     display: flex;
-    gap: 11.5rem;
-    margin: 0 0 4.8rem;
+    gap: 3.5rem;
 
-    @media (max-width: $tablet) {
-      gap: 3.5rem;
-      align-items: flex-end;
-      margin: 0 0 4rem;
-    }
-
-    @media (max-width: $mobile) {
-      gap: 2.8rem;
-      margin: 0 0 4.8rem;
-    }
   }
 
   &__item {
     display: flex;
     align-items: center;
-    gap: 1.4rem;
-    color: $red;
+    font-size: 3rem;
+    line-height: 1.01;
     text-transform: uppercase;
     font-family: $mossport;
-    font-size: 3.5rem;
-    line-height: 1;
-
-    @media (max-width: $tablet) {
-      flex-direction: column;
-      align-items: flex-start;
-      color: $white;
-      font-size: 2.4rem;
-      gap: 1rem;
-    }
-  }
-
-  &__info {
-    font-size: 2rem;
-    max-width: 65.8rem;
-    margin: 0 0 11rem;
-
-    p {
-      margin: 0 0 2.3rem;
-    }
-
-    ul {
-      margin: 0;
-      padding-left: 3.1rem;
-    }
-
-    @media (max-width: $tablet) {
-      font-size: 1.2rem;
-      max-width: 40rem;
-      line-height: 1;
-      margin: 0 0 4.2rem;
-
-      p {
-        margin: 0 0 1.1rem;
-      }
-    }
-
-    @media(max-width: $mobile) {
-      margin: 0 0 5.5rem;
-      ul {
-        padding-left: 2rem;
-      }
-
-    }
-  }
-
-  &__bottom {
-    display: flex;
-    justify-content: space-between;
-
-    @media (max-width: $mobile) {
-      flex-direction: column;
-    }
-  }
-
-  &__underground {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-
-    @media (max-width: $mobile) {
-      align-items: flex-start;
-      margin-top: 4.8rem;
-    }
-  }
-
-  &__socials {
-    display: flex;
-    gap: 2.3rem;
-    margin: 0 0 2.1rem;
-
-    @media (max-width: $tablet) {
-      margin: 0 0 1.5rem;
-    }
-  }
-
-  &__item-image {
-
-    @media (max-width:$tablet) {
-      display: none;
-    }
-
-    &--tablet {
-      display: none;
-
-      @media (max-width:$tablet) {
-        display: block;
-      }
-    }
-  }
-
-  &__policy-link {
-    text-transform: uppercase;
-    font-size: 1.4rem;
-    color: $bgcolor;
-    opacity: 0.4;
-    text-decoration: none;
-    font-weight: 400;
-
-    &:hover {
-      opacity: 1;
-    }
-
-    @media (max-width: $tablet) {
-      font-size: 1.2rem;;
-    }
+    color: $white;
+    gap: 1.5rem;
   }
 
   &__emails {
-    display: flex;
-    gap: 8.8rem;
-
     h6 {
-      font-size: 2rem;
       text-transform: uppercase;
-      margin: 0 0 2.4rem;
+      font-family: $myriad;
+      font-size: 2rem;
+      margin: 0 0 1.3rem;
       font-weight: 400;
     }
 
     a {
       display: block;
-      font-size: 3.2rem;
-      line-height: 1.2;
       color: $white;
+      font-size: 3.2rem;
+      font-family: 400px;
+      line-height: normal;
+      font-family: $myriad;
+      transition: 0.2s ease-in;
 
       &:hover {
         color: $red;
       }
     }
+  }
 
-    @media (max-width: $tablet) {
-      gap: 2.3rem;
-      h6 {
-        font-size: 1.2rem;
-        margin: 0 0 1rem;
-      }
-
-      a {
-        font-size: 1.6rem;
-      }
+  &__email {
+    &:not(:last-child) {
+      margin: 0 0 7.5rem;
     }
   }
+
+  &__info {
+    padding-top: 1rem;
+    font-size: 2rem;
+    line-height: 1.1;
+
+    p {
+      margin: 0 0 2rem;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 3rem;
+
+    }
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    gap: 2.3rem;
+    margin: 0 0 2rem;
+  }
+
+  &__policy-link {
+    text-transform: uppercase;
+    color: $white;
+    opacity: 0.4;
+    text-decoration: none;
+    font-size: 1.4rem;
+  }
+
+
 
 }
