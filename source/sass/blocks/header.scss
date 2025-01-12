@@ -7,11 +7,21 @@
   padding: 3.5rem 0 0;
 
   @media (max-width: $tablet) {
-    padding-bottom: 1.5rem;
+    padding: 2.4rem 0 0;
   }
 
   @media (max-width: $mobile) {
     padding-bottom: 2.2rem;
+  }
+
+  .mobile-logo {
+    display: none;
+
+    @media (max-width: $tablet) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
 
@@ -46,19 +56,45 @@
     z-index: 2;
 
     @media (max-width: $tablet) {
-      align-self: center;
-      gap: 1.8rem;
-      padding: 1.5rem 0 0 0px;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      padding: 1.5rem;
+      background-color: $red;
+      border-radius: 19px;
     }
 
     @media (max-width: $mobile) {
-      gap: 2rem;
-      padding: 2rem .6rem 0 0;
+      gap: 1.8rem;
+      padding: 1.7rem 1.5rem 1.7rem 1.4rem;
+      border-radius: 12px;
     }
   }
 
   &__logo {
     transition: 0.2s color ease-in;
+
+    @media (max-width: $tablet) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $white;
+      background: none;
+      border-radius: 0;
+      padding: 0;
+
+      svg,img {
+        height: 3rem;
+        width: auto;
+      }
+    }
+
+    @media (max-width: $mobile) {
+      svg,img {
+        height: 1.8rem;
+      }
+
+    }
 
     img {
       width: auto;

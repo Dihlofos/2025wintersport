@@ -20,6 +20,10 @@
     position: absolute;
     right: -43.3rem;
     bottom: -37.7rem;
+
+    @media (max-width: $desktop) {
+      right: -31rem;
+    }
   }
 
   &__box {
@@ -28,6 +32,11 @@
     background-color: $darkGreen;
     overflow: hidden;
     padding: 27.6rem 9.9rem 6.3rem;
+
+    @media (max-width: $tablet) {
+      padding: 27.6rem 2.9rem 6.3rem;
+
+    }
   }
 
   &__texture {
@@ -88,8 +97,7 @@
     }
 
     @media (max-width: $tablet) {
-      margin: 0 0 2.4rem;
-        padding: 0 0 2rem;
+
     }
 
     @media (max-width: $mobile) {

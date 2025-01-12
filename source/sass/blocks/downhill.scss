@@ -1,6 +1,10 @@
 .downhill {
   padding: 7rem 0 10rem;
 
+  @media (max-width: $mobile) {
+    padding: 0 0 10rem;
+  }
+
   &__title {
     margin: 0 0 5rem;
   }
@@ -31,6 +35,10 @@
     right: 0;
     bottom: 0;
     z-index: 3;
+
+    @media (max-width: $laptop) {
+      width: 45%;
+    }
   }
 
   &__content {
@@ -40,11 +48,27 @@
     font-family: $myriad;
     max-width: 51.2rem;
 
+    @media (max-width: $tablet) {
+      padding: 3.8rem 0 6rem 3.8rem;
+      max-width: 35.2rem;
+    }
+
     p {
       margin: 0;
       &:not(:last-child) {
         margin: 0 0 3rem;
       }
+    }
+  }
+
+  &__button {
+    border-radius: 17px;
+    margin-top: 2rem;
+    padding: 1.4rem 1.7rem;
+
+    @media (max-width: $tablet) {
+      border-radius: 6px;
+      width: auto;
     }
   }
 }

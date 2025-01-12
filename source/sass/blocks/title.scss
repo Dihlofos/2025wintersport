@@ -16,4 +16,9 @@
     font-size: 3.5rem;
     line-height: 1;
   }
+
+  @media (max-width: $mobile) {
+    font-size: 3.6rem;
+    line-height: 1;
+  }
 }

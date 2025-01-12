@@ -4,5 +4,9 @@
 
   img {
     max-width: unset;
+
+    @media (max-width: $mobile) {
+      height: 4.3rem;
+    }
   }
 }

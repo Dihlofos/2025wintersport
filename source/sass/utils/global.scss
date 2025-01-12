@@ -6,7 +6,7 @@ html {
   }
 
   @media (max-width: $laptop) {
-    @include font(8px, 8px, 400);
+    @include font(9px, 9px, 400);
   }
 
   @media (max-width: $tablet) {
@@ -31,8 +31,12 @@ body {
   min-height: 100vh;
   padding-top: 15.8rem;
 
-  @media (max-width: $laptop) {
-    // шаблон медиа-запроса desktop-first
+  @media (max-width: $tablet) {
+    padding-top: 10.8rem;
+  }
+
+  @media (max-width: $mobile) {
+    padding-top: 9.1rem;
   }
 
   @media (min-resolution: $extra) {
@@ -87,3 +91,6 @@ img {
 .align-center {
   align-items: center;
 }
+
+
+

@@ -53,19 +53,19 @@
       <main style="overflow: hidden">
         <nav class="nav nav--mobile js-nav">
           <button class="nav__mobile-toggler js-nav-toggler">
-            <svg width="33" height="22" viewBox="0 0 33 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="33" height="2" fill="#EE2C3C"/>
-              <rect y="10" width="33" height="2" fill="#EE2C3C"/>
-              <rect y="20" width="33" height="2" fill="#EE2C3C"/>
+            <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="52" height="52" rx="12" fill="#539635"/>
+              <rect x="13" y="17" width="26" height="2" fill="white"/>
+              <rect x="13" y="25" width="26" height="2" fill="white"/>
+              <rect x="13" y="33" width="26" height="2" fill="white"/>
             </svg>
           </button>
           <div class="nav__wrapper">
             <button class="nav__close js-nav-close ">
-              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="1.41406" y="0.000244141" width="33" height="2" transform="rotate(45 1.41406 0.000244141)" fill="white"/>
-                <rect x="1.41406" y="0.000244141" width="33" height="2" transform="rotate(45 1.41406 0.000244141)" fill="white"/>
-                <rect x="24.7485" y="1.41431" width="33" height="2" transform="rotate(135 24.7485 1.41431)" fill="white"/>
-                <rect x="24.7485" y="1.41431" width="33" height="2" transform="rotate(135 24.7485 1.41431)" fill="white"/>
+              <svg width="41" height="42" viewBox="0 0 41 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.2893 41.3164C31.4948 41.3164 40.5786 32.0674 40.5786 20.6582C40.5786 9.24898 31.4948 0 20.2893 0C9.08382 0 0 9.24898 0 20.6582C0 32.0674 9.08382 41.3164 20.2893 41.3164Z" fill="#FF121F"/>
+                <path d="M28.6899 12.2571L12.2565 28.6906" stroke="white" stroke-width="6" stroke-linecap="square"/>
+                <path d="M28.6899 28.6904L12.2565 12.2569" stroke="white" stroke-width="6" stroke-linecap="square"/>
               </svg>
             </button>
             <ul class="nav__list">
@@ -102,8 +102,13 @@
                   >Контакты</a
                 >
               </li>
+              <li class="nav__item">
+                <a href="#" class="nav__mos-link button button-red">Портал sport.mos.ru</a>
+              </li>
             </ul>
-            <img class="nav__decor" src="img/nav/decor.png" alt="" width="280" height="385">
+
+            <img class="nav__decor" src="img/nav/decor.png" alt="" width="255" height="209">
+            <div class="nav__texture"></div>
           </div>
         </nav>
         <header
@@ -117,6 +122,21 @@
               <div class="header__logos">
                 <a href="#" class="header__logo" target="_blank">
                   <img src="img/logos/winter-in-moscow.svg" alt="Зима в Москве"  width="116" height="45">
+                </a>
+                <a href="#" class="header__logo mobile-logo">
+                  <svg width="69" height="35" role="img" aria-label="skate">
+                    <use href="img/sprite.svg#icon-logo-major"></use>
+                  </svg>
+                </a>
+                <a href="#" class="header__logo mobile-logo">
+                  <svg width="104" height="34" role="img" aria-label="skate">
+                    <use href="img/sprite.svg#icon-logo-dep"></use>
+                  </svg>
+                </a>
+                <a href="#" class="header__logo mobile-logo">
+                  <svg width="112" height="34" role="img" aria-label="skate">
+                    <use href="img/sprite.svg#icon-logo-mossport"></use>
+                  </svg>
                 </a>
               </div>
               <nav class="header__nav nav">
@@ -163,8 +183,6 @@
           <div class="container">
           <div class="hero__box hero__box--dark">
             <div class="hero__texture"></div>
-
-
             <div class="hero__content">
               <div class="hero__main">
                 <a href="#" class="hero__link button button-red">Портал sport.mos.ru</a>
@@ -209,7 +227,12 @@
                 <picture>
                   <source srcset="img/hero/decor.webp" type="image/webp">
                   <source srcset="img/hero/decor.png" type="image/png">
-                  <img src="img/hero/decor.png" alt="" width="706" height="725">
+                  <img class="desktop" src="img/hero/decor.png" alt="" width="706" height="725">
+                </picture>
+                <picture>
+                  <source srcset="img/hero/decor-mobile.webp" type="image/webp">
+                  <source srcset="img/hero/decor-mobile.png" type="image/png">
+                  <img class="mobile" src="img/hero/decor-mobile.png" alt="" width="270" height="442">
                 </picture>
               </div>
             </div>
@@ -222,7 +245,12 @@
                 <picture>
                   <source srcset="img/hero/helmet.webp" type="image/webp">
                   <source srcset="img/hero/helmet.png" type="image/png">
-                  <img src="img/hero/helmet.png" width="558" height="492" />
+                  <img class="desktop" src="img/hero/helmet.png" width="558" height="492" />
+                </picture>
+                <picture>
+                  <source srcset="img/hero/helmet-mobile.webp" type="image/webp">
+                  <source srcset="img/hero/helmet-mobile.png" type="image/png">
+                  <img class="mobile" src="img/hero/helmet-mobile.png" alt="" width="343" height="270">
                 </picture>
               </div>
               <div class="hero__box-right">
@@ -247,7 +275,7 @@
 
             <div class="main__active-title">
               <span>Спортивные активности</span>
-              <span>10:00 — 20:00</span>
+              <span>11:00 — 19:00</span>
             </div>
             <div class="main__slider js-main-slider-container">
               <div class="js-main-prev-concert main__arrow main__arrow--prev">
@@ -256,49 +284,91 @@
               <div class="swiper-container js-main-slider-concert">
                 <div class="swiper-wrapper main__wrapper">
                   <div class="swiper-slide main__slide">
-                    <div class="main__slide-title main__slide-title--white">Керлинг</div>
+                    <div class="main__slide-title main__slide-title--white">Кёрлинг</div>
                     <img src="img/main/kerling.jpg" width="299" height="171"/>
                     <div class="main__slide-text">
-                      <p>Проверьте стратегическое мышление и&nbsp;прокачайте точность на&nbsp;льду во&nbsp;время турнира или одиночной игры.</p>
-                      <p>В&nbsp;зоне работают инструкторы.</p>
+                      <p>Проверьте свое стратегическое мышление и точность на льду во время турнира друг против друга или одиночной игры. </p>
+                      <p>Основная задача – сбить камень соперника из центра и максимально надолго задержать его там.</p>
                     </div>
                   </div>
                   <div class="swiper-slide main__slide">
                     <div class="main__slide-title main__slide-title--white">Дриблинг</div>
                     <img src="img/main/dribling.jpg" width="299" height="171"/>
                     <div class="main__slide-text">
-                      <p>Попробуйте себя в&nbsp;роли хоккеиста и&nbsp;научитесь попадать в&nbsp;ворота с&nbsp;разных расстояний.</p>
-                      <p>В&nbsp;зоне работают инструкторы.</p>
+                      <p>Попробуйте себя в роли хоккеиста и научитесь попадать в ворота с разных расстояний.</p>
                     </div>
                   </div>
                   <div class="swiper-slide main__slide">
                     <div class="main__slide-title main__slide-title--white">Снегоступы</div>
                     <img src="img/main/snowstoops.png" width="299" height="171"/>
                     <div class="main__slide-text">
-                      <p>Надевайте снегоступы и&nbsp;попробуйте преодолеть полосу препятствий за&nbsp;максимально короткое время.</p>
+                      <p>Надевайте снегоступы и попробуйте преодолеть полосу препятствий за максимально короткое время.</p>
+                      <p>Кто первый прибежал,тот и победил.</p>
                     </div>
                   </div>
                   <div class="swiper-slide main__slide">
-                    <div class="main__slide-title main__slide-title--white">Керлинг</div>
+                    <div class="main__slide-title main__slide-title--white">Веселые старты</div>
                     <img src="img/main/kerling.jpg" width="299" height="171"/>
                     <div class="main__slide-text">
-                      <p>Проверьте стратегическое мышление и&nbsp;прокачайте точность на&nbsp;льду во&nbsp;время турнира или одиночной игры.</p>
-                      <p>В&nbsp;зоне работают инструкторы.</p>
+                      <p>Примите участие в эстафетах для всей семьи. </p>
+                      <p>«Передача эстафетной палочки», «Кенгуру — прыжки в мешках», «Переправа с обручем» — чья команда придет первой, тот и победил.</p>
                     </div>
                   </div>
                   <div class="swiper-slide main__slide">
-                    <div class="main__slide-title main__slide-title--white">Дриблинг</div>
+                    <div class="main__slide-title main__slide-title--white"> VR и зимний кинотеатр</div>
                     <img src="img/main/dribling.jpg" width="299" height="171"/>
                     <div class="main__slide-text">
-                      <p>Попробуйте себя в&nbsp;роли хоккеиста и&nbsp;научитесь попадать в&nbsp;ворота с&nbsp;разных расстояний.</p>
-                      <p>В&nbsp;зоне работают инструкторы.</p>
+                      <p>Перенеситесь на горные склоны и прокатитесь на сноуборде или лыжах с ветерком, как настоящий профессионал. </p>
+                      <p>Здесь же можно отдохнуть в теплом зимнем кинотеатре и посмотреть мультфильмы на спортивную тематику.</p>
                     </div>
                   </div>
                   <div class="swiper-slide main__slide">
-                    <div class="main__slide-title main__slide-title--white">Дриблинг</div>
+                    <div class="main__slide-title main__slide-title--white">Лазерный биатлон </div>
                     <img src="img/main/snowstoops.png" width="299" height="171"/>
                     <div class="main__slide-text">
-                      <p>Надевайте снегоступы и&nbsp;попробуйте преодолеть полосу препятствий за&nbsp;максимально короткое время.</p>
+                      <p>Почувствуйте себя настоящим биатлонистом и попробуйте выбить все мишени.</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide main__slide">
+                    <div class="main__slide-title main__slide-title--white">Снежный дартс</div>
+                    <img src="img/main/snowstoops.png" width="299" height="171"/>
+                    <div class="main__slide-text">
+                      <p>Прокачайте навыки метания, стараясь поразить разные по ширине мишени, размещенные на снежной стене. </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide main__slide">
+                    <div class="main__slide-title main__slide-title--white">Фигурное катание</div>
+                    <img src="img/main/snowstoops.png" width="299" height="171"/>
+                    <div class="main__slide-text">
+                      <p>Освойте навыки фигурного катания и попробуйте сделать как можно больше вращений на льду.</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide main__slide">
+                    <div class="main__slide-title main__slide-title--white">Сноуборд</div>
+                    <img src="img/main/snowstoops.png" width="299" height="171"/>
+                    <div class="main__slide-text">
+                      <p>Подготовьтесь встать на сноуборд с помощью балансборда и попробуйте продержаться на нем несколько минут.</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide main__slide">
+                    <div class="main__slide-title main__slide-title--white">Волейбол на снегу</div>
+                    <img src="img/main/snowstoops.png" width="299" height="171"/>
+                    <div class="main__slide-text">
+                      <p>Попробуйте новую разновидность волейбола прямо на большом снежном поле.</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide main__slide">
+                    <div class="main__slide-title main__slide-title--white">Зимний боулинг</div>
+                    <img src="img/main/snowstoops.png" width="299" height="171"/>
+                    <div class="main__slide-text">
+                      <p>Сыграйте в боулинг на заснеженном ландшафте и сбейте максимальное количество кеглей валенками или снежными мячами. </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide main__slide">
+                    <div class="main__slide-title main__slide-title--white">Гонки на санках</div>
+                    <img src="img/main/snowstoops.png" width="299" height="171"/>
+                    <div class="main__slide-text">
+                      <p>Участвуйте в гонках на санках по заснеженной территории в виде эстафеты. Кто первый прибежал, то и победил. </p>
                     </div>
                   </div>
                 </div>
@@ -310,27 +380,30 @@
 
             <div class="main__active-title">
               <span>Детская зона</span>
-              <span>10:00 — 19:00</span>
+              <span>11:00 — 19:00</span>
             </div>
 
             <div class="main__box-row">
               <div class="main__box main__box--green">
                 <div class="main__box-content">
-                  <div class="main__box-title">Конкурс<br/> снеговиков</div>
+                  <div class="main__box-title">Конкурс <br/>снеговиков</div>
                 </div>
-                <img class="main__box-decor" src="img/main/snowman.png" alt="" width="260" height="260">
+                <img class="main__box-decor desktop" src="img/main/snowman.png" alt="" width="260" height="260">
+                <img class="main__box-decor mobile" src="img/main/snowman-mobile.png" alt="" width="203" height="126">
               </div>
               <div class="main__box main__box--green">
                 <div class="main__box-content">
-                  <div class="main__box-title">Большая<br/> дженга</div>
+                  <div class="main__box-title">Большая <br/>дженга</div>
                 </div>
-                <img class="main__box-decor" src="img/main/heart.png" alt="" width="234" height="216">
+                <img class="main__box-decor desktop" src="img/main/heart.png" alt="" width="234" height="216">
+                <img class="main__box-decor mobile" src="img/main/heart-mobile.png" alt="" width="210" height="117">
               </div>
               <div class="main__box main__box--green">
                 <div class="main__box-content">
-                  <div class="main__box-title">Прогулки<br> на&nbsp;зимнем<br> паровозе</div>
+                  <div class="main__box-title">Прогулки <br>на&nbsp;зимнем <br>паровозе</div>
                 </div>
-                <img class="main__box-decor" src="img/main/gloves.png" alt="" width="238" height="223">
+                <img class="main__box-decor desktop" src="img/main/gloves.png" alt="" width="238" height="223">
+                <img class="main__box-decor mobile" src="img/main/gloves-mobile.png" alt="" width="224" height="126">
               </div>
             </div>
 
@@ -363,14 +436,14 @@
               <div class="main__box main__box--third">
                 <div class="main__box-content">
                   <div class="main__box-title">19:00</div>
-                  <div class="main__box-text">концерт<br> Алсу</div>
+                  <div class="main__box-text main__box-text--small">концерт<br> Алсу</div>
                 </div>
                 <img class="main__box-decor" src="img/main/alsu.png" alt="" width="240" height="259">
               </div>
               <div class="main__box main__box--third">
                 <div class="main__box-content">
                   <div class="main__box-title">19:30</div>
-                  <div class="main__box-text">концерт<br> мити <br/> фомина</div>
+                  <div class="main__box-text main__box-text--small">концерт<br> мити <br/> фомина</div>
                 </div>
                 <img class="main__box-decor" src="img/main/fomin.png" alt="" width="253" height="259">
               </div>
@@ -385,7 +458,8 @@
           <div class="container">
             <div class="retro__box">
               <div class="retro__texture"></div>
-              <img class="retro__decor" src="img/retro/skates.png" alt="" width="478" height="615">
+              <img class="retro__decor desktop" src="img/retro/skates.png" alt="" width="478" height="615">
+              <img class="retro__decor mobile" src="img/retro/skates-mobile.png" alt="" width="329" height="285">
               <div class="retro__content">
                 <div class="retro__left">
                   <h3 class="retro__title title title--white">Ретрокаток</h3>
@@ -405,14 +479,14 @@
                   <div class="retro__row">
                     <div class="retro__time">16:30</div>
                     <div class="retro__table-cell">
-                      <div class="retro__table-cell-text">Викторина с ведущим</div>
+                      <div class="retro__table-cell-text">Викторина на знание 70-90-х годов</div>
                     </div>
                   </div>
                   <div class="retro__row">
                     <div class="retro__time">17:00</div>
                     <div class="retro__table-cell">
                       <div class="retro__table-cell-text">Иммерсивное шоу «Пой. Танцуй. Московский спорт»</div>
-                      <a href="#" class="retro__button button button--green">Регистрация</a>
+                      <a href="https://zima-moscow-sport.timepad.ru/event/3190868/" class="retro__button button button--green" target="_blank">Регистрация</a>
                     </div>
                   </div>
                   <div class="retro__row">
@@ -436,7 +510,6 @@
                     </div>
                   </div>
                 </div>
-
               </div>
             </div>
           </div>
@@ -457,7 +530,7 @@
                   <h4 class="race__title title title--white">Гонка звезд</h4>
                   <p>Приготовьтесь к&nbsp;захватывающей звездной гонке по&nbsp;биатлону.</p>
                   <p>Чемпионы мира и&nbsp;Европы, олимпийские призеры, известные гости&nbsp;&mdash; за&nbsp;победу борются 12&nbsp;команд. Болельщиков ждут зрелищные заезды, музыка, теплые зоны и&nbsp;конкурсы.</p>
-                  <a href="#" class="race__button button">Подробнее</a>
+                  <a href="https://ski-biathlon.sport.moscow/" class="race__button button" target="_blank">Подробнее</a>
                 </div>
               </div>
             </div>
@@ -475,6 +548,7 @@
                   <p>Захватите тюбинг из&nbsp;дома или возьмите бесплатно на&nbsp;месте. </p>
                   <p>И&nbsp;не&nbsp;забудьте заглянуть на&nbsp;соревнования по&nbsp;сноускуту&nbsp;&mdash; они пройдут на&nbsp;склоне с&nbsp;13:00 до&nbsp;15:00.</p>
                 </div>
+                <a href="https://sport.mos.ru/events/rwKq4GdpaVV" class="downhill__button button" target="_blank">Подробнее</a>
               </div>
 
             </div>

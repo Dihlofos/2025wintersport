@@ -6,21 +6,17 @@
 
   console.log("warpper", slider);
 
-  if (wrapper.childNodes.length > 3 && vw >= 744) {
-    new Swiper(`.js-main-slider-concert`, {
-      // Optional parameters
-      slidesPerView: 3,
-      spaceBetween: 40,
-      initialSlide: 0,
-      draggable: false,
-      pagination: false,
-      loop: true,
-      navigation: {
-        nextEl: ".js-main-next-concert",
-        prevEl: ".js-main-prev-concert",
-      },
-    });
-  } else {
-    slider.classList.add("disabled");
-  }
+  new Swiper(`.js-main-slider-concert`, {
+    // Optional parameters
+    slidesPerView: vw > 1024 ? 3 : 1,
+    spaceBetween: 40,
+    initialSlide: 0,
+    draggable: false,
+    pagination: false,
+    loop: true,
+    navigation: {
+      nextEl: ".js-main-next-concert",
+      prevEl: ".js-main-prev-concert",
+    },
+  });
 })();
