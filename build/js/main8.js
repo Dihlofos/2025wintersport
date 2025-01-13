@@ -46,6 +46,10 @@
     });
   });
 
+  if (!showMoreButton) {
+    return;
+  }
+
   showMoreButton.addEventListener("click", () => {
     moreContent.classList.add("show");
     showMoreButton.classList.add("hidden");
@@ -70,7 +74,7 @@
   const locations = {
     1: "Горка",
     2: "Зимний день Московского спорта",
-    3: "Ретро каток",
+    3: "Ретрокаток",
     4: "Гонка звезд",
   };
 

@@ -15,6 +15,10 @@
     });
   });
 
+  if (!showMoreButton) {
+    return;
+  }
+
   showMoreButton.addEventListener("click", () => {
     moreContent.classList.add("show");
     showMoreButton.classList.add("hidden");

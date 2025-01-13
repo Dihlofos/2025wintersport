@@ -8,7 +8,7 @@
   }
 
   @media (max-width: $mobile) {
-    padding: 1.5rem 0 6.8rem;
+    padding: 1.5rem 0 25.4rem;
 
     .container {
       padding: 0;
@@ -32,9 +32,9 @@
 
     @media (max-width: $tablet) {
       left: auto;
-      bottom: -17rem;
-      right: -3rem;
-      width: 40rem;
+      bottom: -19rem;
+      right: -3.1rem;
+      width: 24.6rem;
     }
 
   }
@@ -81,7 +81,7 @@
 
     @media (max-width: $mobile) {
       max-width: 124.2rem;
-      width: 363%;
+      width: 256%;
     }
   }
 
@@ -89,6 +89,10 @@
     @media (max-width: $tablet) {
       display: flex;
       flex-direction: column-reverse;
+    }
+
+    @media (max-width: $mobile) {
+      margin-top: -3.5rem;
     }
 
   }
@@ -235,6 +239,7 @@
     }
 
     @media (max-width: $mobile) {
+      font-size: 1.4rem;
     }
   }
 
@@ -283,7 +288,7 @@
     @media (max-width: $mobile) {
       height: auto;
       column-count: auto;
-      padding: 5.5rem 1.6rem 0;
+      padding: 3.1rem 1.4rem 0;
       max-height: initial;
     }
   }
@@ -293,7 +298,7 @@
 
     @media (max-width: $mobile) {
       display: block;
-      margin: 1.5rem auto 0;
+      margin: 3rem auto 0;
     }
 
   }

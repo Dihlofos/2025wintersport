@@ -2,6 +2,10 @@
   padding: 8.2rem 0 40.1rem;
   font-family: $myriad;
 
+  @media (max-width: $mobile) {
+    padding: 4.4rem 0 22.1rem;
+  }
+
   .container {
     position: relative;
   }
@@ -14,6 +18,19 @@
       border-bottom-left-radius: 0;
       background-color: $darkRed;
     }
+
+    @media (max-width: $mobile) {
+      padding: 1.2rem 1.2rem 1.3rem 1rem;
+      gap: 1.3rem;
+      border-radius: 12px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
   }
 
   &__logos {
@@ -28,6 +45,16 @@
       gap: 0;
     }
 
+    @media (max-width: $mobile) {
+      .logos__logo {
+        img, svg {
+          height: 1.4rem;
+          width: auto;
+        }
+
+      }
+    }
+
   }
 
   &__title {
@@ -35,6 +62,10 @@
 
     @media (max-width: $tablet) {
       margin: 2rem 0 0;
+    }
+
+    @media (max-width: $tablet) {
+      margin: 1rem 0 0;
     }
   }
 
@@ -70,11 +101,15 @@
         margin: 0 0 4rem;
       }
 
+      @media (max-width: $mobile) {
+        margin: 0 0 5rem;
+      }
+
     }
 
     &--bottom {
       align-items: flex-end;
-      margin-top: -3.2rem;
+      margin-top: -12.2rem;
 
       @media (max-width: $tablet) {
         margin-top: 0;
@@ -99,6 +134,20 @@
       border-bottom-right-radius: 0;
       padding-right: 0;
     }
+
+    @media (max-width: $mobile) {
+      flex-shrink: 0;
+      padding: 1.2rem 0 1.3rem 1rem;
+      border-radius: 12px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+
+
+      img {
+        width: auto;
+        height: 1.4rem;
+      }
+    }
   }
 
   &__texture {
@@ -116,15 +165,41 @@
     border-top-right-radius: 19px;
     background-size: 94.2rem;
     z-index: 1;
+
+    @media (max-width: $mobile) {
+      height: 24rem;
+      width: 100%;
+      background-image: url(../img/texture.png);
+      background-repeat: repeat;
+      background-position: -0.5rem 76rem;
+      border-top-left-radius: 19px;
+      border-top-right-radius: 19px;
+      background-size: 38.2rem;
+      z-index: 1;
+    }
   }
 
   &__right {
-    width: 56rem;
+    width: 62rem;
+    margin-right: -6rem;
+
+    @media (max-width: $tablet) {
+      margin-right: 0;
+      width: auto;
+    }
   }
 
   &__contacts {
     display: flex;
-    gap: 3.5rem;
+    gap: 7.5rem;
+
+    @media (max-width: $tablet) {
+      gap: 3.5rem;
+    }
+
+    @media (max-width: $mobile) {
+      gap: 5.5rem;
+    }
 
   }
 
@@ -137,17 +212,37 @@
     font-family: $mossport;
     color: $white;
     gap: 1.5rem;
+
+    @media(max-width: $mobile) {
+      font-size: 2rem;
+      gap: 1rem;
+      img {
+        width: 3rem;
+      }
+
+    }
   }
 
   &__emails {
+    margin: 0 0 7rem;
     h6 {
       text-transform: uppercase;
       font-family: $myriad;
       font-size: 2rem;
       margin: 0 0 1.3rem;
       font-weight: 400;
+
+      @media (max-width: $mobile) {
+        font-size: 1.2rem;
+      }
     }
 
+    @media (max-width: $mobile) {
+      margin: 0 0 4rem;
+    }
+  }
+
+  &__email {
     a {
       display: block;
       color: $white;
@@ -160,12 +255,12 @@
       &:hover {
         color: $red;
       }
+
+      @media (max-width: $mobile) {
+        font-size: 1.6rem;
+      }
     }
 
-
-  }
-
-  &__email {
     &:not(:last-child) {
       margin: 0 0 7.5rem;
 
@@ -189,6 +284,19 @@
       padding-left: 3rem;
 
     }
+
+    @media (max-width: $mobile) {
+      font-size: 1.2rem;
+      max-width: 95%;
+
+      p {
+        margin: 0 0 1rem;
+      }
+
+      ul {
+        padding-left: 1.8rem;
+      }
+    }
   }
 
   &__socials {
@@ -196,6 +304,10 @@
     align-items: center;
     gap: 2.3rem;
     margin: 0 0 2rem;
+
+    @media (max-width: $mobile) {
+      margin: 5rem 0 2rem;
+    }
   }
 
   &__policy-link {
@@ -204,6 +316,12 @@
     opacity: 0.4;
     text-decoration: none;
     font-size: 1.4rem;
+
+    @media (max-width: $mobile) {
+      font-size: 1.2rem;
+    }
+
+
   }
 
 

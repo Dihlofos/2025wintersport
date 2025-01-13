@@ -13,7 +13,7 @@
   }
 
   @media (max-width: $mobile) {
-    padding: 9rem 0 6.5rem;
+    padding: 5rem 0 21.6rem;
   }
 
   &__decor {
@@ -23,6 +23,12 @@
 
     @media (max-width: $desktop) {
       right: -31rem;
+    }
+
+    @media (max-width: $mobile) {
+      right: -7rem;
+      bottom: -34.7rem;
+      transform: rotate(84deg);
     }
   }
 
@@ -35,7 +41,11 @@
 
     @media (max-width: $tablet) {
       padding: 27.6rem 2.9rem 6.3rem;
+    }
 
+    @media (max-width: $mobile) {
+      border-radius: 12px;
+      padding: 17.9rem 1.95rem 3.3rem;
     }
   }
 
@@ -53,6 +63,17 @@
     border-top-left-radius: 19px;
     border-top-right-radius: 19px;
     background-size: 58.2rem;
+
+    @media (max-width: $mobile) {
+      height: 16rem;
+      width: 100%;
+      background-image: url(../img/texture.png);
+      background-repeat: repeat;
+      background-position: -0rem 16rem;
+      border-top-left-radius: 19px;
+      border-top-right-radius: 19px;
+      background-size: 34.2rem;
+    }
   }
 
   &__title {
@@ -65,7 +86,7 @@
     }
 
     @media (max-width: $mobile) {
-      margin: 0 0 2.4rem;
+      margin: 0 0 4.2rem;
     }
   }
 
@@ -101,11 +122,10 @@
     }
 
     @media (max-width: $mobile) {
-      padding: 0 0 1.6rem;
+      border-radius: 12px;
+      margin: 0 0 1.6rem;
+      padding: 1.2rem 1.3rem 0.8rem 1.6rem;
 
-      &:first-child {
-        padding: 1.4rem 0 1.4rem;
-      }
     }
   }
 
@@ -143,12 +163,13 @@
       align-items: flex-start;
       gap: 1rem;
       padding-right: 3rem;
+
     }
 
     .active & {
       color: $grey;
       border-bottom: 1px solid $green;
-      padding-bottom: 2.5rem;
+      padding-bottom: 0.6rem;
 
       .faq__plus {
         display: none;
@@ -194,7 +215,9 @@
 
     @media (max-width: $mobile) {
       margin: 0 0 0 1rem;
-      top: 1rem;
+      top: 0;
+      width: 2.3rem;
+      height: 2.3rem;
     }
   }
 
@@ -218,7 +241,7 @@
 
     @media (max-width: $mobile) {
       font-size: 1.4rem;
-      margin: 2.5rem 0 0;
+      margin: 1.2rem 0 0;
     }
 
     .active & {
