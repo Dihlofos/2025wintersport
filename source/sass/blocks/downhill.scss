@@ -63,7 +63,7 @@
     }
 
     @media (max-width: $mobile) {
-      width: 91%;
+      width: 31.2rem;
     }
   }
 
@@ -99,9 +99,11 @@
   }
 
   &__button {
+    position: relative;
     border-radius: 17px;
     margin-top: 2rem;
     padding: 1.4rem 1.7rem;
+    z-index: 5;
 
     @media (max-width: $tablet) {
       border-radius: 6px;

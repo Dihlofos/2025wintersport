@@ -85,6 +85,7 @@
     padding-top: 4.9rem;
     flex-shrink: 0;
     align-self: flex-end;
+    pointer-events: none;
 
     @media (max-width: $tablet) {
       position: absolute;
