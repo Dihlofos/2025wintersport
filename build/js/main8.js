@@ -86,7 +86,7 @@
   };
 
   setTimeout(() => {
-    mapScroller?.scroll({ left: 275 });
+    mapScroller?.scroll({ left: 150 });
   }, 500);
 
   figures.forEach((figure) => {
