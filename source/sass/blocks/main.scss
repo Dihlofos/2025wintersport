@@ -7,7 +7,7 @@
     padding-bottom: 10rem;
   }
 
-  @media (max-width: $mobile) {
+  @media (max-width: $tablet) {
     padding-bottom: 9.9rem;
   }
 
@@ -22,7 +22,7 @@
       margin: 0 0 3.5rem;
     }
 
-    @media (max-width: $mobile) {
+    @media (max-width: $tablet) {
       margin: 0 0 4rem;
     }
   }
@@ -37,7 +37,7 @@
       margin: 0 0 6rem;
     }
 
-    @media (max-width: $mobile) {
+    @media (max-width: $tablet) {
       margin: -1rem 0 5.6rem;
     }
   }
@@ -100,7 +100,7 @@
     border-radius: 19px;
     padding: 3.5rem 3.1rem 4.1rem 3rem;
 
-    @media (max-width: $mobile) {
+    @media (max-width: $tablet) {
       padding: 2.1rem 1.6rem 2.1rem 1.7rem;
       border-radius: 12px;
     }
@@ -117,7 +117,7 @@
         max-width: 100%;
       }
 
-      @media (max-width: $mobile) {
+      @media (max-width: $tablet) {
         border-radius: 12px;
         margin: 0 0 1rem;
       }
@@ -136,7 +136,7 @@
       margin: 0 0 3rem;
     }
 
-    @media (max-width: $mobile) {
+    @media (max-width: $tablet) {
       p {
         font-size: 1.4rem;
       }
@@ -163,7 +163,7 @@
       font-size: 2.4rem;
     }
 
-    @media (max-width: $mobile) {
+    @media (max-width: $tablet) {
       font-size: 2.1rem;
       margin: 0 0 1.2rem;
     }
@@ -184,7 +184,7 @@
       top: -33rem;
     }
 
-    @media (max-width: $mobile) {
+    @media (max-width: $tablet) {
       right: -6.4rem;
       top: -8.2rem;
       width: 21.9rem;
@@ -200,11 +200,6 @@
     width: 74%;
 
     @media (max-width: $tablet) {
-      font-size: 2rem;
-      margin: 0 0 2rem;
-    }
-
-    @media (max-width: $mobile) {
       font-size: 1.4rem;
       line-height: 1.1;
       margin: 0 0 3.4rem;
@@ -226,12 +221,8 @@
     position: relative;
     z-index: 3;
 
-    @media (max-width: $tablet) {
-      font-size: 3rem;
-      margin: 0 0 2rem;
-    }
 
-    @media (max-width: $mobile) {
+    @media (max-width: $tablet) {
       font-size: 2.1rem;
       margin: 0 0 3.1rem;
       border-radius: 8px;
@@ -247,9 +238,6 @@
 
     @media (max-width: $tablet) {
       margin: 0 0 6rem;
-    }
-
-    @media (max-width: $mobile) {
       display: flex;
       flex-direction: column;
       margin-top: 2rem;
@@ -265,7 +253,7 @@
     border-radius: 19px;
     height: 26rem;
 
-    @media (max-width: $mobile) {
+    @media (max-width: $tablet) {
       border-radius: 12px;
       height: 11rem;
       padding: 1.5rem 1.7rem;
@@ -279,13 +267,29 @@
       width: calc(50% - 1.9rem);
       height: 21.5rem;
 
-      @media (max-width: $mobile) {
+      @media (max-width: $tablet) {
         width: calc(50% - 0.7rem);
         height: 18.8rem;
 
         .main__box-decor {
           width: 14rem;
           right: -1rem;
+
+          &--snowboard {
+            width: 12rem;
+          }
+
+          &--soldout {
+            width: 14rem;
+            right: 0;
+          }
+
+          &--alsu {
+            width: 14rem;
+            right: 0;
+          }
+
+
         }
       }
     }
@@ -293,13 +297,21 @@
     &--third {
       width: calc(33.33333% - 2.5rem);
 
-      @media (max-width: $mobile) {
-        width: calc(50% - 0.7rem);
+      @media (max-width: $tablet) {
+        width: calc(50% - 1.9rem);
         height: 18.8rem;
 
         .main__box-decor {
           width: 14rem;
-          right: -1rem;
+          right: 0;
+
+          &--gift {
+            width: 12rem;
+          }
+
+          &--fomin {
+            width: 9rem;
+          }
         }
 
         &:nth-child(3) {
@@ -308,15 +320,21 @@
 
         }
       }
+
+      @media (max-width: $tablet) {
+        width: calc(50% - 0.7rem);
+        height: 18.8rem;
+
+      }
     }
 
 
   }
 
   &__box-title {
-    margin: 0 0 3rem;
+    margin: 0 0 2rem;
 
-    @media (max-width: $mobile) {
+    @media (max-width: $tablet) {
       font-size: 2.1rem;
       max-width: 14rem;
       margin: 0 0 1rem;
@@ -332,7 +350,7 @@
   }
 
   &__box-text {
-    @media (max-width: $mobile) {
+    @media (max-width: $tablet) {
       font-size: 2.1rem;
 
       &--small {
@@ -354,6 +372,10 @@
     text-transform: uppercase;
     font-size: 4rem;
     line-height: 1.01;
+
+    @media (max-width: $tablet) {
+      font-size: 3rem;
+    }
   }
 
   &__box-decor {
@@ -361,24 +383,41 @@
     right: 0;
     bottom: 0;
 
+    &--alsu {
+      right: 5.6rem;
+    }
+
     &.desktop {
       display: block;
 
-      @media (max-width: $mobile) {
+      @media (max-width: $tablet) {
         display: none;
       }
     }
 
-    &.mobile {
+    &.tablet {
       display: none;
 
-      @media (max-width: $mobile) {
+      @media (max-width: $tablet) {
         display: block;
       }
     }
 
     @media (max-width: $laptop) {
       width: 60%;
+
+      &--alsu {
+        width: 25rem;
+      }
+    }
+
+    @media (max-width: $tablet) {
+      width: 14rem;
+
+      &--alsu {
+        right: 3rem;
+        width: 50%;
+      }
     }
   }
 
@@ -387,7 +426,7 @@
     flex-wrap: wrap;
     gap: 3.7rem;
 
-    @media (max-width: $mobile) {
+    @media (max-width: $tablet) {
       gap: 1.4rem;
 
       &:nth-child(3) {
