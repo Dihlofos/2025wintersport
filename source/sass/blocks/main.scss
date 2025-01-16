@@ -3,6 +3,10 @@
   overflow: visible;
   padding: 6.7rem 0 18.8rem;
 
+  .opacity-hidden {
+    opacity: 0;
+  }
+
   @media (max-width: $laptop) {
     padding-bottom: 10rem;
   }
