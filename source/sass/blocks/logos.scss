@@ -23,7 +23,10 @@
 
 
     &:hover {
-      color: $red;
+      @media(min-width: 1025px) {
+        color: $red;
+      }
+
     }
 
     .logos--red &:hover {
