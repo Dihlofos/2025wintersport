@@ -294,6 +294,11 @@
           }
 
 
+          &--nyusha {
+            width: 18rem;
+            right: -3rem;
+            max-width: unset;
+          }
         }
       }
     }
@@ -314,15 +319,10 @@
           }
 
           &--fomin {
-            width: 9rem;
+            width: 10rem;
           }
         }
 
-        &:nth-child(3) {
-          width: 100%;
-          height: 9.1rem;
-
-        }
       }
 
       @media (max-width: $tablet) {
