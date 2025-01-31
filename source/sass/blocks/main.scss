@@ -151,6 +151,19 @@
     }
   }
 
+  &__slide-text {
+    a {
+      color: $white;
+      display: block;
+      margin-top: 10px;
+      font-weight: 700;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
   &__slide-title {
     color: $white;
     font-family: $mossport;
